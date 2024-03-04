@@ -21,7 +21,28 @@ React’s popularity today has eclipsed that of all other front-end development 
 - Dedicated tools for easy debugging: Facebook has released a Chrome extension that can be used to debug React applications. This makes the process of debugging React web applications faster and easier.
 
 # ReactJS Advantages
-<p>
+<p align="center">
   <img src="https://media.licdn.com/dms/image/D4D12AQHOSye8D0thTA/article-cover_image-shrink_600_2000/0/1702363019916?e=2147483647&v=beta&t=vP_biLMP_u95MaIJklghBa3Kipa98AGo35LwR3iuijQ">
 </p>
+
+- React.js builds a customized virtual DOM. Because the JavaScript virtual DOM is quicker than the conventional DOM, this will enhance the performance of apps. 
+- ReactJS makes an amazing UI possible. 
+- Search - engine friendly ReactJS. 
+- Modules and valid data make larger apps easier to manage by increasing readability. 
+- React integrates various architectures. 
+- React makes the entire scripting environment process simpler. 
+- It makes advanced maintenance easier and boosts output. 
+- Guarantees quicker rendering 
+- The availability of a script for developing mobile apps is the best feature of React.
+- ReactJS is supported by a large community.
+
+# Virtual Document Object Model (DOM) 
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*OY-um1C1N9evOIlYjzADZg.png">
+</p>
+
+The Virtual DOM is React's lightweight version of the Real DOM. Real DOM manipulation is substantially slower than virtual DOM manipulation. When an object's state changes, Virtual DOM updates only that object in the real DOM rather than all of them.
+- What is the Document Object Model (DOM) ?
+
+DOM (Document Object Model) treats an XML or HTML document as a tree structure in which each node is an object representing a part of the document.
           
