@@ -4,6 +4,9 @@
 - Why React?
 - Installation
 - React Router
+- Hooks
+- Components
+- API
 
 # What is React ?
 
@@ -230,5 +233,19 @@ Client side routing is enabled by creating a Router and linking/submitting to pa
     createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
     );
+
+# Hooks
+Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.
+
+### Built-in React Hooks
+- State Hooks
+
+State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
+
+To add state to a component, use one of these Hooks:
+
+1) useState declares a state variable that you can update directly.
+2) useReducer declares a state variable with the update logic inside a reducer function.
+ 
     
     
