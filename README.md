@@ -6,7 +6,7 @@
 - React Router
 - Hooks
 - Components
-- API
+- React APIs
 
 # What is React ?
 
@@ -238,7 +238,7 @@ Client side routing is enabled by creating a Router and linking/submitting to pa
 Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.
 
 ### Built-in React Hooks
-- State Hooks
+#### State Hooks
 
 State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
 
@@ -246,6 +246,56 @@ To add state to a component, use one of these Hooks:
 
 1) useState declares a state variable that you can update directly.
 2) useReducer declares a state variable with the update logic inside a reducer function.
+
+#### Context Hooks
+
+Context lets a component receive information from distant parents without passing it as props. For example, your app’s top-level component can pass the current UI theme to all components below, no matter how deep.
+
+useContext reads and subscribes to a context.
+
+### Effect Hooks 
+
+Effects let a component connect to and synchronize with external systems. This includes dealing with network, browser DOM, animations, widgets written using a different UI library, and other non-React code.
+
+useEffect connects a component to an external system.
+
+    function ChatRoom({ roomId }) {
+    useEffect(() => {
+    const connection = createConnection(roomId);
+    connection.connect();
+    return () => connection.disconnect();
+    }, [roomId]);
+
+Effects are an “escape hatch” from the React paradigm. Don’t use Effects to orchestrate the data flow of your application. If you’re not interacting with an external system, you might not need an Effect.
+
+There are two rarely used variations of useEffect with differences in timing:
+
+  1) useLayoutEffect fires before the browser repaints the screen. You can measure layout here.
+  2) useInsertionEffect fires before React makes changes to the DOM. Libraries can insert dynamic CSS here.
+
+# Components
+React exposes a few built-in components that you can use in your JSX.
+ ## Built-in components
+ 
+    - <Fragment> alternatively written as <>...</>, lets you group multiple JSX nodes together.
+    - <Profiler> lets you measure rendering performance of a React tree programmatically.
+    - <Suspense> lets you display a fallback while the child components are loading.
+    - <StrictMode> enables extra development-only checks that help you find bugs early.
+    
+You can also define your own components as JavaScript functions.
+
+# React APIs
+The react package exports a few other APIs that are useful for defining components. This page lists all the remaining modern React APIs
+
+        
+   - createContext lets you define and provide context to the child components. Used with useContext.
+   - forwardRef lets your component expose a DOM node as a ref to the parent. Used with useRef.
+   - lazy lets you defer loading a component’s code until it’s rendered for the first time.
+   - memo lets your component skip re-renders with same props. Used with useMemo and useCallback.
+   - startTransition lets you mark a state update as non-urgent. Similar to useTransition.
+
+
+
  
     
     
