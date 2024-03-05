@@ -1,22 +1,22 @@
 ![React Logo](https://mariosfakiolas.com/uploads/react.jpeg)
 # Table of Contents
-[What is React?](https://github.com/amancoder17/React_Documentation/blob/main/README.md#what-is-react-)
+[What is React?](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#what-is-react-)
 
-[Why React?](https://github.com/amancoder17/React_Documentation/edit/main/README.md#why-react-)
+[Why React?](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#why-react-)
 
-[React JS Advantages](https://github.com/amancoder17/React_Documentation/edit/main/README.md#reactjs-advantages)
+[React JS Advantages](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#reactjs-advantages)
 
-[Virtual Document Object Model (DOM)](https://github.com/amancoder17/React_Documentation/edit/main/README.md#reactjs-advantages)
+[Virtual Document Object Model (DOM)](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#virtual-document-object-model-dom)
 
-[Installation](https://github.com/amancoder17/React_Documentation/edit/main/README.md#installation)
+[Installation](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#installation)
 
-[React Router](https://github.com/amancoder17/React_Documentation/edit/main/README.md#react-router) 
+[React Router](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#react-router) 
 
-[Hooks](https://github.com/amancoder17/React_Documentation/edit/main/README.md#hooks)
+[Hooks](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#hooks)
 
-[Components](https://github.com/amancoder17/React_Documentation/edit/main/README.md#components)
+[Components](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#components)
 
-[React APIs](https://github.com/amancoder17/React_Documentation/edit/main/README.md#react-apis)
+[React APIs](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#react-apis)
 
 # What is React ?
 
