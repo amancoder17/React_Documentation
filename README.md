@@ -2,6 +2,8 @@
 # Table of Contents
 - What is React?
 - Why React?
+- Installation
+- React Router
 
 # What is React ?
 
@@ -45,4 +47,188 @@ The Virtual DOM is React's lightweight version of the Real DOM. Real DOM manipul
 - What is the Document Object Model (DOM) ?
 
 DOM (Document Object Model) treats an XML or HTML document as a tree structure in which each node is an object representing a part of the document.
-          
+<p align="center">
+  <img src="https://www.w3schools.com/js/pic_htmltree.gif">
+</p>
+
+- How do Virtual DOM and React DOM interact with each other?
+
+When the state of an object changes in a React application, VDOM gets updated. It then compares its previous state and then updates only those objects in the real DOM instead of updating all of the objects. This makes things move fast, especially when compared to other front-end technologies that have to update each object even if only a single object changes in the web application.
+
+# Installation
+
+### Step 1: Install Node.js and npm
+
+ Before installing React, you need to have Node.js and npm (Node Package Manager) installed on your system. If you haven’t already installed them, follow these steps:
+
+- Visit the Node.js download page at: https://nodejs.org/en/download/
+- Download the installer for your Windows system (either the LTS or Current version is fine, but the LTS version is recommended for most users)
+- To install Node.js and npm, please run the installer and carefully follow the provided prompts.
+<p align="center">
+  <img src="https://kinsta.com/wp-content/uploads/2023/04/nodejs-download.png">
+</p>
+
+After the installation is complete, you can verify that Node.js and npm are installed by opening a command prompt and running the following commands:
+                       
+    node -v npm -v
+
+### Step 2: Install and Create a New React Project
+
+Create React App is a command-line tool that simplifies the process of setting up a new React project with a recommended project structure and configuration. To install Create React App globally, open a terminal in any environment and run the following command:
+
+    npm init -y
+    npx create-react-app my-app
+
+Replace “my-app” with the desired name for your project. Create React App will create a new directory with the specified name and generate a new React project with a recommended project structure and configuration.
+
+### Step 3: Go To the Project Directory and Start the Development Server
+
+Once the project is created, head over to the project directory by running the following command in the command prompt:
+       
+    cd my-app
+Now, start the development server by running the following command:
+
+    npm start
+
+### Output
+
+    aman@aman-Mi-NoteBook-14:~/reac doc$ npm init -y
+    Wrote to /home/aman/react doc/package.json:
+
+    {
+    "name": "react-doc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+    }
+
+    aman@aman-Mi-NoteBook-14:~/reac doc$ npx create-react-app my-app
+
+    Creating a new React app in /home/aman/reac doc/my-app.
+
+    Installing packages. This might take a couple of minutes.
+    Installing react, react-dom, and react-scripts with cra-template...
+
+
+    added 1490 packages in 1m
+
+    254 packages are looking for funding
+    run `npm fund` for details
+
+    Initialized a git repository.
+
+    Installing template dependencies using npm...
+
+    added 69 packages, and changed 1 package in 7s
+
+    258 packages are looking for funding
+    run `npm fund` for details
+    Removing template package using npm...
+
+
+    removed 1 package, and audited 1559 packages in 3s
+
+    258 packages are looking for funding
+    run `npm fund` for details
+
+    8 vulnerabilities (2 moderate, 6 high)
+
+    To address all issues (including breaking changes), run:
+    npm audit fix --force
+
+    Run `npm audit` for details.
+
+    Created git commit.
+
+    Success! Created my-app at /home/aman/reac doc/my-app
+    Inside that directory, you can run several commands:
+
+    npm start
+    Starts the development server.
+
+    npm run build
+    Bundles the app into static files for production.
+
+    npm test
+    Starts the test runner.
+
+    npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+    We suggest that you begin by typing:
+
+    cd my-app
+    npm start
+
+    Happy hacking!
+    
+    aman@aman-Mi-NoteBook-14:~/reac doc$ cd my-app
+    aman@aman-Mi-NoteBook-14:~/reac doc/my-app$ npm start
+    Compiled successfully!
+
+    You can now view my-app in the browser.
+
+    Local:            http://localhost:3000
+    On Your Network:  http://192.168.89.119:3000
+
+    Note that the development build is not optimized.
+    To create a production build, use npm run build.
+
+    webpack compiled successfully
+
+
+<p align="center">
+  <img src="https://kinsta.com/wp-content/uploads/2023/04/react-on-windows.png">
+</p>
+
+
+# React Router
+
+React Router enables "client side routing".
+
+In traditional websites, the browser requests a document from a web server, downloads and evaluates CSS and JavaScript assets, and renders the HTML sent from the server. When the user clicks a link, it starts the process all over again for a new page.
+
+Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information.
+
+This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
+
+Client side routing is enabled by creating a Router and linking/submitting to pages with Link and <Form>:
+
+
+    import * as React from "react";
+    import { createRoot } from "react-dom/client";
+    import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    Link,
+    } from "react-router-dom";
+
+    const router = createBrowserRouter([
+    {
+    path: "/",
+    element: (
+      <div>
+        <h1>Hello World</h1>
+        <Link to="about">About Us</Link>
+      </div>
+    ),
+    },
+    {
+    path: "about",
+    element: <div>About</div>,
+    },  
+    ]);
+
+    createRoot(document.getElementById("root")).render(
+    <RouterProvider router={router} />
+    );
+    
+    
