@@ -1,3 +1,4 @@
+<h1 align="center">React JS- A documentation on React JS</h1>
 ![React Logo](https://mariosfakiolas.com/uploads/react.jpeg)
 # Table of Contents
 [What is React?](https://github.com/amancoder17/React_Documentation?tab=readme-ov-file#what-is-react-)
