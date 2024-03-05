@@ -1,13 +1,21 @@
 ![React Logo](https://mariosfakiolas.com/uploads/react.jpeg)
 # Table of Contents
 [What is React?](https://github.com/amancoder17/React_Documentation/blob/main/README.md#what-is-react-)
+
 [Why React?](https://github.com/amancoder17/React_Documentation/edit/main/README.md#why-react-)
+
 [React JS Advantages](https://github.com/amancoder17/React_Documentation/edit/main/README.md#reactjs-advantages)
+
 [Virtual Document Object Model (DOM)](https://github.com/amancoder17/React_Documentation/edit/main/README.md#reactjs-advantages)
+
 [Installation](https://github.com/amancoder17/React_Documentation/edit/main/README.md#installation)
+
 [React Router](https://github.com/amancoder17/React_Documentation/edit/main/README.md#react-router) 
+
 [Hooks](https://github.com/amancoder17/React_Documentation/edit/main/README.md#hooks)
+
 [Components](https://github.com/amancoder17/React_Documentation/edit/main/README.md#components)
+
 [React APIs](https://github.com/amancoder17/React_Documentation/edit/main/README.md#react-apis)
 
 # What is React ?
